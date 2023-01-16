@@ -1,0 +1,14 @@
+.logo {
+    width: 15%;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.nav-links {
+    justify-content: end !important;
+    font-size: 2rem !important;
+}
