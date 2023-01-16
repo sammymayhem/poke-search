@@ -6,7 +6,7 @@ import logo from '../../assets/images/poke-logo.png';
 function Header() {
     return (
         <div className='header'>
-            <Navbar collapseOnSelect expand="md">
+            <Navbar collapseOnSelect expand="md" variant='dark'>
                 <Container>
                     <Navbar.Brand href="#home"><Image src={logo} className='logo'></Image></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
