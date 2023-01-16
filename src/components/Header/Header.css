@@ -1,11 +1,24 @@
+.header {
+    background-color: #F45746;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
 .logo {
     width: 15%;
     min-width: 200px;
     max-width: 300px;
 }
 
+.navbar-toggler {
+    color: white !important;
+}
+
 .nav-link {
     text-align: center;
+    color: white !important;
 }
 
 .nav-links {
