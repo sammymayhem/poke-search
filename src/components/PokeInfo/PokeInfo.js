@@ -5,7 +5,7 @@ import axios from 'axios';
 
 function PokeInfo() {
 
-    const [name, setname] = useState("");
+    const [name, setName] = useState("");
     const [Find, setFind] = useState("");
     const [Img, setImg] = useState("");
     const [Type, setType] = useState("");
@@ -22,12 +22,12 @@ function PokeInfo() {
     }, [Find]);
 
     const Typename = (event) => {
-        setname(event.target.value);
+        setName(event.target.value);
     };
 
     const Search = () => {
         if (name !== "") setFind(name);
-        setname("");
+        setName("");
     };
 
     return (

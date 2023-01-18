@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { InputGroup, Form, Button, Card, ListGroup } from 'react-bootstrap';
+import { InputGroup, Form, Button, Card } from 'react-bootstrap';
 import axios from 'axios';
 import './Home.css';
 
@@ -9,6 +9,8 @@ function Home() {
     const [Find, setFind] = useState("");
     const [Img, setImg] = useState("");
     const [Type, setType] = useState("");
+
+    const [showResults, setShowResults] = useState(false);
 
     useEffect(() => {
         async function getData() {
@@ -28,6 +30,7 @@ function Home() {
     const Search = () => {
         if (name !== "") setFind(name);
         setname("");
+        setShowResults(true);
     };
 
     return (
@@ -48,23 +51,19 @@ function Home() {
                 </InputGroup>
             </div>
 
-            {/* This will need to be mapped once the api is added */}
-            <div className='poke-card'>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={`${Img}`} />
-                    <Card.Body>
-                        <Card.Title className='name'>{Find.toUpperCase()}</Card.Title>
-                        <Card.Text className='type'>
-                            {Type}
-                        </Card.Text>
-                    </Card.Body>
-                    <ListGroup className="list-group-flush">
-                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                    </ListGroup>
-                </Card>
-            </div>
+            {showResults ?
+                <div className='poke-card'>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={`${Img}`} />
+                        <Card.Body>
+                            <Card.Title className='name'>{Find.toUpperCase()}</Card.Title>
+                            <Card.Text className='type'>
+                                {Type}
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
+                : <div></div> }
         </div>
     );
 }
