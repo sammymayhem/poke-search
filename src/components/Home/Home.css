@@ -9,6 +9,14 @@
     padding: 40px;
 }
 
+input, button, .card {
+    border: 2px solid black !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
 .search-btn {
     padding: 0 20px 0 20px;
     background-color: #F45746;
@@ -17,5 +25,14 @@
 }
 
 .poke-card {
-   
+   display: flex;
+   text-align: center;
+}
+
+.card {
+    background-color: #F45746 !important;
+}
+
+.type {
+    text-transform: capitalize;
 }
