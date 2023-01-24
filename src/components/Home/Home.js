@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { InputGroup, Form, Button, Card, ListGroup } from 'react-bootstrap';
+import { InputGroup, Form, Button, Card } from 'react-bootstrap';
 import axios from 'axios';
 import './Home.css';
 
@@ -56,18 +56,10 @@ function Home() {
                     <div className='poke-image'>
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={`${Img}`} />
+                            <Card.Text className='name'>{Find.toUpperCase()}</Card.Text>
+                            <Card.Text className='type'>Type: {Type}</Card.Text>
                         </Card>
                     </div>
-                    <div className='poke-info'>    
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Header className='name'>{Find.toUpperCase()}</Card.Header>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item className='type'>Type: {Type}</ListGroup.Item>
-                                <ListGroup.Item>Description:</ListGroup.Item>
-                                <ListGroup.Item>Evolved from:</ListGroup.Item>
-                            </ListGroup>
-                        </Card>
-                    </div>    
                 </div>
                 : <div></div>}
         </div>

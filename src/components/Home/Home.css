@@ -25,14 +25,21 @@ input, button, .card {
 }
 
 .poke-card {
-   display: flex;
    text-align: center;
 }
 
 .card {
-    background-color: #F45746 !important;
+    background-color: lightgray !important;
 }
 
 .type {
     text-transform: capitalize;
+    padding-bottom: 10px;
 }
+
+@media only screen and (max-width: 620px) {
+    .poke-card {
+        display: flex;
+        flex-direction: column;
+    }
+  }
