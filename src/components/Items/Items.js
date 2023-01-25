@@ -37,6 +37,11 @@ function Items() {
     const Search = () => {
         if (name !== "") setFind(name);
         setname("");
+        setType("");
+        setDescrip("");
+        setCost("");
+        setItemType("");
+        setItemEffect("");
         setShowResults(true);
     };
 

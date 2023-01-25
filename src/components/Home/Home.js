@@ -33,15 +33,23 @@ function Home() {
         setShowResults(true);
     };
 
+    const handleKeypress = e => {
+        //it triggers by pressing the enter key
+      if (e.keyCode === 13) {
+        Search();
+      }
+    };
+
     return (
         <div className='home'>
             <div className='poke-input'>
                 <InputGroup className="mb-3">
                     <Form.Control
-                        placeholder="Enter pokemon"
+                        placeholder="Enter a pokemon name"
                         aria-label="Enter pokemon"
                         aria-describedby="basic-addon2"
                         type='text'
+                        onKeyDown={handleKeypress}
                         onChange={Typename}
                         value={name}
                     />

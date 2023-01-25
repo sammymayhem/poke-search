@@ -33,6 +33,10 @@ function Moves() {
     const Search = () => {
         if (name !== "") setFind(name);
         setname("");
+        setPower("");
+        setPp("");
+        setAttkType("");
+        setType("");
         setShowResults(true);
     };
 
@@ -41,7 +45,7 @@ function Moves() {
             <div className='move-input'>
                 <InputGroup className="mb-3">
                     <Form.Control
-                        placeholder="Enter move"
+                        placeholder="Enter a move name"
                         aria-label="Enter move"
                         aria-describedby="basic-addon2"
                         type='text'
