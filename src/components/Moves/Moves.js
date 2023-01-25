@@ -69,7 +69,10 @@ function Moves() {
                         </ListGroup>
                     </Card>
                 </div>
-                : <div></div>}
+                : 
+                <div>
+                    <h2>Enter the name of a pokmon move to view it's stats!</h2>
+                </div>}
         </div>
     );
 }

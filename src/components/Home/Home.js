@@ -35,9 +35,9 @@ function Home() {
 
     const handleKeypress = e => {
         //it triggers by pressing the enter key
-      if (e.keyCode === 13) {
-        Search();
-      }
+        if (e.keyCode === 13) {
+            Search();
+        }
     };
 
     return (
@@ -69,7 +69,12 @@ function Home() {
                         </Card>
                     </div>
                 </div>
-                : <div></div>}
+                : 
+                <div>
+                    <div className='pre-search'>
+                        <h2>Enter the name of a pokemon and get their type!</h2>
+                    </div>
+                </div>}
         </div>
     );
 }

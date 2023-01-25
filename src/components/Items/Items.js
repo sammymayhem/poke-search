@@ -82,7 +82,10 @@ function Items() {
                         </Card>
                     </div>
                 </div>
-                : <div></div>}
+                : 
+                <div>
+                    <h2>Enter the name of an item to get some information about it!</h2>
+                </div>}
         </div>
     );
 }
