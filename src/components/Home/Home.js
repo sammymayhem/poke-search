@@ -70,7 +70,7 @@ function Home() {
                     </div>
                 </div>
                 : 
-                <div>
+                <div className='pre-container'>
                     <div className='pre-search'>
                         <h2>Enter the name of a pokemon and get their type!</h2>
                     </div>

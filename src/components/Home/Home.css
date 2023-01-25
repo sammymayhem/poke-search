@@ -37,6 +37,17 @@ input, button, .card {
     padding-bottom: 10px;
 }
 
+.pre-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pre-search {
+    text-align: center;
+    max-width: 60%;
+    font-family: 'Poppins', sans-serif;
+}
+
 @media only screen and (max-width: 620px) {
     .poke-card {
         display: flex;

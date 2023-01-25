@@ -52,6 +52,17 @@ input, button, .card {
     text-align: center !important;
 }
 
+.pre-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pre-search {
+    text-align: center;
+    max-width: 60%;
+    font-family: 'Poppins', sans-serif;
+}
+
 @media only screen and (max-width: 620px) {
     .items-card {
         display: flex;
