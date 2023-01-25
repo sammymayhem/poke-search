@@ -37,8 +37,8 @@ function Moves() {
     };
 
     return (
-        <div className='home'>
-            <div className='poke-input'>
+        <div className='move'>
+            <div className='move-input'>
                 <InputGroup className="mb-3">
                     <Form.Control
                         placeholder="Enter move"

@@ -1,0 +1,45 @@
+.move {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.move-input {
+    width: 60%;
+    padding: 40px;
+}
+
+input, button, .card {
+    border: 2px solid black !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.search-btn {
+    padding: 0 20px 0 20px;
+    background-color: #F45746;
+    color: white;
+    border-color: #F45746;
+}
+
+.move-card {
+   text-align: center;
+}
+
+.move-card {
+    background-color: lightgray !important;
+}
+
+.move-name {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 620px) {
+    .move-card {
+        display: flex;
+        flex-direction: column;
+    }
+  }

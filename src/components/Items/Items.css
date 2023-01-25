@@ -1,0 +1,60 @@
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items-input {
+    width: 60%;
+    padding: 40px;
+}
+
+input, button, .card {
+    border: 2px solid black !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.search-btn {
+    padding: 0 20px 0 20px;
+    background-color: #F45746;
+    color: white;
+    border-color: #F45746;
+}
+
+.items-card {
+   text-align: left;
+   display: flex;
+   flex-direction: row;
+}
+
+.items-image {
+    background-color: lightgray !important;
+}
+
+.items-info {
+    background-color: white !important;
+}
+
+.items-type, .items-effect, .items-cost, .item-desc {
+    padding: 10px 0px 10px 10px;
+}
+
+.items-type {
+    text-transform: capitalize;
+}
+
+.items-name {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    text-align: center !important;
+}
+
+@media only screen and (max-width: 620px) {
+    .items-card {
+        display: flex;
+        flex-direction: column;
+    }
+  }
