@@ -13,7 +13,7 @@ function Header() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto nav-links">
-                            <Nav.Link className='link-1' id='nav-link' as={Link} to='/home'>Pokemon</Nav.Link>
+                            <Nav.Link className='link-1' id='nav-link' as={Link} to='/'>Pokemon</Nav.Link>
                             <Nav.Link className='link-2' id='nav-link' as={Link} to='/moves'>Moves</Nav.Link>
                             <Nav.Link className='link-3' id='nav-link' as={Link} to='/items'>Items</Nav.Link>
                         </Nav>

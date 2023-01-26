@@ -72,7 +72,7 @@ function Moves() {
                 : 
                 <div className='pre-container'>
                     <div className='pre-search'>
-                        <h2>Enter the name of a pokmon move to view it's stats!</h2>
+                        <h2>Enter the name of a pokemon move or ability to view it's stats!</h2>
                     </div>
                 </div>}
         </div>
