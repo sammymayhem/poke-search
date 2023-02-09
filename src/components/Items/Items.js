@@ -47,47 +47,49 @@ function Items() {
 
     return (
         <div className='items'>
-            <div className='items-input'>
-                <InputGroup className="mb-3">
-                    <Form.Control
-                        placeholder="Enter an item name"
-                        aria-label="Enter item"
-                        aria-describedby="basic-addon2"
-                        type='text'
-                        onChange={Typename}
-                        value={name}
-                    />
-                    <Button variant="outline-secondary" id="button-addon2" className='search-btn' onClick={Search}>
-                        Go!
-                    </Button>
-                </InputGroup>
-            </div>
-
-            {showResults ?
-                <div className='items-card'>
-                    <div className='items-image'>
-                        <Card className='h-100' style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={`${Img}`} />
-                        </Card>
-                    </div>
-                    <div className='items-info'>
-                        <Card className='h-100' style={{ width: '18rem' }}>
-                            <Card.Header className='items-name'>{Find.toUpperCase()}</Card.Header>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item className='items-type'>Item Type: {Type} / {ItemType}</ListGroup.Item>
-                                <ListGroup.Item className='items-effect'>Item Effect: {ItemEffect}</ListGroup.Item>
-                                <ListGroup.Item className='items-cost'>Cost: {Cost}</ListGroup.Item>
-                                <ListGroup.Item className='items-desc'>Description: {Descrip}</ListGroup.Item>
-                            </ListGroup>
-                        </Card>
-                    </div>
+            <div className='tint'>
+                <div className='items-input'>
+                    <InputGroup className="mb-3">
+                        <Form.Control
+                            placeholder="Enter an item name"
+                            aria-label="Enter item"
+                            aria-describedby="basic-addon2"
+                            type='text'
+                            onChange={Typename}
+                            value={name}
+                        />
+                        <Button variant="outline-secondary" id="button-addon2" className='search-btn' onClick={Search}>
+                            Go!
+                        </Button>
+                    </InputGroup>
                 </div>
-                : 
-                <div className='pre-container'>
-                    <div className='pre-search'>
-                        <h2>Enter the name of an item to get some information about it!</h2>
+
+                {showResults ?
+                    <div className='items-card'>
+                        <div className='items-image'>
+                            <Card className='h-100' style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src={`${Img}`} />
+                            </Card>
+                        </div>
+                        <div className='items-info'>
+                            <Card className='h-100' style={{ width: '18rem' }}>
+                                <Card.Header className='items-name'>{Find.toUpperCase()}</Card.Header>
+                                <ListGroup variant="flush">
+                                    <ListGroup.Item className='items-type'>Item Type: {Type} / {ItemType}</ListGroup.Item>
+                                    <ListGroup.Item className='items-effect'>Item Effect: {ItemEffect}</ListGroup.Item>
+                                    <ListGroup.Item className='items-cost'>Cost: {Cost}</ListGroup.Item>
+                                    <ListGroup.Item className='items-desc'>Description: {Descrip}</ListGroup.Item>
+                                </ListGroup>
+                            </Card>
+                        </div>
                     </div>
-                </div>}
+                    :
+                    <div className='pre-container'>
+                        <div className='pre-search'>
+                            <h2>Enter the name of an item to get some information about it!</h2>
+                        </div>
+                    </div>}
+            </div>
         </div>
     );
 }

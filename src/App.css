@@ -1,3 +1,6 @@
+:root {
+  --prime-red: #F45746;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

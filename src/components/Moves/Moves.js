@@ -42,39 +42,41 @@ function Moves() {
 
     return (
         <div className='move'>
-            <div className='move-input'>
-                <InputGroup className="mb-3">
-                    <Form.Control
-                        placeholder="Enter a move name"
-                        aria-label="Enter move"
-                        aria-describedby="basic-addon2"
-                        type='text'
-                        onChange={Typename}
-                        value={name}
-                    />
-                    <Button variant="outline-secondary" id="button-addon2" className='search-btn' onClick={Search}>
-                        Go!
-                    </Button>
-                </InputGroup>
-            </div>
-
-            {showResults ?
-                <div className='move-card'>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Header className='move-name'>{Find.toUpperCase()}</Card.Header>
-                        <ListGroup variant="flush">
-                            <ListGroup.Item className='move-type'>Move type: {Type} / {AttkType}</ListGroup.Item>
-                            <ListGroup.Item className='move-power'>Power: {Power}</ListGroup.Item>
-                            <ListGroup.Item className='move-pp'>PP: {Pp}</ListGroup.Item>
-                        </ListGroup>
-                    </Card>
+            <div className='tint'>
+                <div className='move-input'>
+                    <InputGroup className="mb-3">
+                        <Form.Control
+                            placeholder="Enter a move name"
+                            aria-label="Enter move"
+                            aria-describedby="basic-addon2"
+                            type='text'
+                            onChange={Typename}
+                            value={name}
+                        />
+                        <Button variant="outline-secondary" id="button-addon2" className='search-btn' onClick={Search}>
+                            Go!
+                        </Button>
+                    </InputGroup>
                 </div>
-                : 
-                <div className='pre-container'>
-                    <div className='pre-search'>
-                        <h2>Enter the name of a pokemon move or ability to view it's stats!</h2>
+
+                {showResults ?
+                    <div className='move-card'>
+                        <Card style={{ width: '18rem' }}>
+                            <Card.Header className='move-name'>{Find.toUpperCase()}</Card.Header>
+                            <ListGroup variant="flush">
+                                <ListGroup.Item className='move-type'>Move type: {Type} / {AttkType}</ListGroup.Item>
+                                <ListGroup.Item className='move-power'>Power: {Power}</ListGroup.Item>
+                                <ListGroup.Item className='move-pp'>PP: {Pp}</ListGroup.Item>
+                            </ListGroup>
+                        </Card>
                     </div>
-                </div>}
+                    :
+                    <div className='pre-container'>
+                        <div className='pre-search'>
+                            <h2>Enter the name of a pokemon move or ability to view it's stats!</h2>
+                        </div>
+                    </div>}
+            </div>
         </div>
     );
 }
