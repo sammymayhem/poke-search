@@ -40,6 +40,7 @@ input, button, .card {
 
 .poke-card {
    text-align: center;
+   align-self: center;
 }
 
 .card {

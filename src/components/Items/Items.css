@@ -41,14 +41,17 @@ input, button, .card {
    text-align: left;
    display: flex;
    flex-direction: row;
+   align-self: center;
 }
 
 .items-image {
     background-color: lightgray !important;
+    border-radius: 5px;
 }
 
 .items-info {
     background-color: white !important;
+    border-radius: 5px;
 }
 
 .items-type, .items-effect, .items-cost, .item-desc {

@@ -9,7 +9,7 @@ function Header() {
         <div className='header'>
             <Navbar collapseOnSelect expand="md" variant='dark'>
                 <Container>
-                    <Navbar.Brand id='nav-link' as={Link} to='/home'><Image src={logo} className='logo'></Image></Navbar.Brand>
+                    <Navbar.Brand id='nav-link' as={Link} to='/'><Image src={logo} className='logo'></Image></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto nav-links">
